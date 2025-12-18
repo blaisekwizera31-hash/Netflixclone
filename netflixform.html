@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.div{
+position: relative;
+width: 500px;
+}
+#netflixform{
+justify-items: center;
+margin-top: 10px;
+}
+#formnewto{
+    position: absolute;
+    left: 140px;
+    top: -1px;
+}
+body{
+    background-image: url(images/Bg.png);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+}
+.form{
+    background: #140909;
+    width: 400px;
+    height: 600px;
+    padding: 40px;
+   justify-items: center;
+}
+#form-email{
+padding: 15px;
+width: 300px;
+border-radius: 5px;
+background: #000;
+outline: none;
+border: 1px solid rgb(56, 55, 55);
+color: white;
+
+}
+.email{
+    position: relative;
+}
+.email label{
+    position: absolute;
+    top: 17px;
+    font-size: 15px;
+   color: rgb(122, 122, 121);
+   left: 10px;
+   pointer-events: none;
+   transition: 0.3s ease all;
+}
+#form-email:focus + label,
+#form-email:not(:placeholder-shown) + label{
+    top: 3px;
+    left: 10px;
+    font-size: 12px;
+    padding: 0 5px;
+}
+.emaill{
+    position: relative;
+}
+#form-email:focus, #formpassword:focus{
+    border: 2px solid white;
+}
+#formpassword{
+    background: #000;
+    border: 1px solid rgb(54, 54, 54);
+    padding: 15px;
+    width: 300px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 3px;
+   
+}
+.emaill label{
+position: absolute;
+top: 37px;
+left: 10px;
+color: #7c7b7b;
+font-size: 16px;
+pointer-events: none;
+ transition: 0.3s ease all;
+}
+#formpassword:focus + label,
+#formpassword:not(:placeholder-shown) + label{
+    top: 20px;
+    left: 10px;
+    font-size: 14px;
+    padding: 0 5px;
+}
+#formsignin{
+    width: 330px;
+    padding: px;
+    margin-top: 20px;
+    font-size: 18px;
+    height: 49px;
+    background: #f10d0d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+   margin-left: 35px;
+}
+h2{
+    text-align: center;
+}
+#formbutton{
+    justify-items: center;
+    background: #969494;
+    
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px;
+    width: 330px;
+    border: none;
+   font-size: 15px;
+    margin-left: 32px;
+    border-radius: 3px;
+}
+.blaise{
+    justify-items: center;
+    padding-left: 158px;
+    margin-top: 20px;
+    line-height: 2;
+}
+#fg{
+   padding-left: 110px;
+   color: white;
+}
+</style>
+<body>
+  <div class="nav">
+    <nav class="formnav">
+        <img src="images/netflix.png" alt="a logo of netflix">
+    </nav>
+  </div> 
+  <div id="netflixform">
+    <form action="" class="form">
+        <h1>Sign in</h2>
+        <div class="email">
+             <input type="email" id="form-email" placeholder=" " required>
+             <label for="form-email">Email or phone number</label>
+        </div>
+        <div class="emaill">    
+            <input type="password" id="formpassword" placeholder=" " required>
+            <label for="formpassword">Password</label>
+        </div>
+        <button id="formsignin">Sign in</button>
+        <h2>OR</h2>
+        <button id="formbutton" >Use sign-in code</button><br>
+        <div class="blaise">
+            <a href="" id="fg">Forgot password?</a><br>
+            <input type="checkbox">
+            <label for="checkbox" id="formcheckbox">Remember me</label>
+            <div class="div">
+                <h4 id="formnew" style="color: rgb(103, 102, 102);">New to Netflix?</h4>
+                <a href="" id="formnewto" style="color: white;">Sign up now</a>
+            </div>
+            <h6 id="formtext2" style="padding-right: 129px; text-decoration: none;">This page is protected by Google reCAPTCHA to ensure you're not a bot</h6>
+            <a href="" id="formlearmore" style="color: white;">Learn more</a>
+        </div>
+        <a href="netflix.html" id="forbutton" style=" margin-top: 30px; padding: 10px; margin-left: 17px; color: rgb(161, 50, 50);">BACK TO HOME</a>
+    </form>
+  </div> 
+</body>
+</html>

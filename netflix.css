@@ -1,0 +1,350 @@
+.kwizera {
+    background-image: url(images/Bg.png);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000;
+    color: white;
+    margin-top: 0px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- Header --- */
+#header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 10;
+}
+
+#header-nav-photo {
+    width: 160px;
+}
+
+#header-nav-signin {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#dropdown-container {
+    padding: 8px 10px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.7);
+    border: 1px solid #fff;
+    color: white;
+    font-size: 14px;
+}
+
+#signin {
+    background-color: #e50914;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+#signin:hover {
+    background-color: #c11119;
+}
+
+/* --- Main Hero Section --- */
+#main-heading {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px 40px;
+}
+
+#meme {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#main-heading-h6 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+#main-heading-h62 {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+/* --- Email Input --- */
+#main-heading-input {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#email {
+    padding: 5px 5px;
+    width: 400px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid #666;
+    border-radius: 4px 0 0 4px;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+}
+
+#getstarted {
+    padding: 5px 5px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    height: 55px;
+    margin-left: 20px;
+    width: 100px;
+}
+
+#getstarted:hover {
+    background: #c11119;
+}
+
+/* --- Sections --- */
+#tran, #tran2, #tran3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 80px 0 40px;
+}
+
+/* --- Trending Grid --- */
+#gr, #gr2 {
+    padding: 0 40px;
+    margin-bottom: 80px;
+}
+
+#grid, #grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+#grid img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+#grid2 img {
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    gap: 20px;
+}
+
+#grid img:hover {
+    transform: scale(1.08);
+}
+
+/* --- FAQ Section --- */
+#gr3 {
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto 100px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    height: 84px;
+    background: #303030;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: left;
+    padding: 0 80px 0 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s;
+    position: relative;
+}
+
+.faq-question:hover {
+    background: #414141;
+}
+
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 30px;
+    font-size: 50px;
+    font-weight: 100;
+    transition: transform 0.3s;
+}
+
+.faq-question.active::after {
+    content: "×";
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background: #303030;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 0 30px;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+}
+
+.faq-answer.active {
+    max-height: 1200px;
+    padding: 30px;
+}
+
+/* --- Bottom Email Section --- */
+#ending {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+#tran4 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+#ending-ending {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+}
+
+#email2 {
+    width: 450px;
+    padding: 20px 15px;
+    background: rgba(0,0,0,0.7);
+    border: 1px solid #666;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+
+#ending-ending label {
+    position: absolute;
+    left: 15px;
+    top: 45px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s ease all;
+    font-size: 16px;
+}
+
+#email2:focus + label,
+#email2:not(:placeholder-shown) + label {
+    top: 13px;
+    left: 10px;
+    font-size: 12px;
+    background: #1f0505;
+    padding: 0 5px;
+}
+
+#getstarted2 {
+    margin-top: 20px;
+    transition: 0.3s ease all; 
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 12px 20px 18px 20px;
+}
+
+#getstarted2:hover {
+    background: #c11119;
+}
+#getstarted2::after{
+    content: ">";
+}
+
+/* --- Footer --- */
+#questions {
+    padding: 40px 40px 20px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#questions a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+
+#footer {
+    padding: 0 40px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+#footer a {
+    color: #525252;
+    text-decoration: underline;
+    line-height: 2;
+    display: flex;
+    text-align: center;
+    
+
+}
+
+#lanfooter {
+    margin: 30px 40px;
+    padding: 10px;
+    background: black;
+    border: 1px solid #666;
+    border-radius: 4px;
+    color: white;
+}
+
+#foot {
+    padding: 0 40px 100px;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+#learnmore {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    #meme { font-size: 2.5rem; }
+    #main-heading-input { flex-direction: column; }
+    #email, #getstarted { width: 100%; border-radius: 4px; }
+    #getstarted { border-radius: 4px; margin-top: 10px; }
+    #footer { grid-template-columns: 1fr 1fr; }
+    .faq-question { font-size: 1.3rem; padding: 0 60px 0 20px; }
+    .faq-question::after { right: 20px; font-size: 40px; }
+}
