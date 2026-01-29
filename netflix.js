@@ -16,7 +16,7 @@ const translations = {
     "grid-data-3e": "Que puis-je regarder sur Netflix ?",
     "grid-data-3f": "Netflix est-il adapté aux enfants ?",
     tran4: "Prêt à regarder ? Saisissez votre e‑mail pour créer ou réactiver votre abonnement.",
-    email2Label: "Adresse e-mail",
+    email2Label: "Adresse sa e-mail",
     faq: "FAQ",
     investor: "Relations investisseurs",
     privacy: "Confidentialité",
